@@ -1,0 +1,338 @@
+<!DOCTYPE html >
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Fusión | Cocina de Autor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Header Fijo -->
+    <header class="sticky-header">
+        <div class="container">
+            <div class="logo">
+                <h1><span class="logo-highlight">Patagonia</span> Grill</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#recetario">Recetario</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section Cálido -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Sabores que <span class="text-highlight">fusionan</span> culturas</h1>
+                <p class="hero-subtitle">Una experiencia gourmet donde la tradición se encuentra con la innovación en cada plato. Descubre nuestra propuesta culinaria única que combina técnicas ancestrales con ingredientes contemporáneos.</p>
+                <a href="#recetario" class="btn-warm">Explorar Recetas</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero/plato-principal.webp" alt="Plato de gastronomía fusión con ingredientes multiculturales">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Features / Categorías -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Nuestra Propuesta</h2>
+            <p class="section-subtitle">Tres pilares fundamentales que definen nuestra experiencia culinaria</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Recetario Exclusivo</h3>
+                    <p>Descubre nuestras recetas fusionadas paso a paso, con técnicas profesionales y secretos culinarios transmitidos por generaciones.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Menú de Temporada</h3>
+                    <p>Platos únicos que combinan ingredientes locales con técnicas internacionales de alta cocina, renovados cada temporada.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-chef"></i>
+                    </div>
+                    <h3>Experiencia Chef</h3>
+                    <p>Conoce a nuestro equipo y la filosofía que inspira cada creación en nuestro restaurante. Eventos especiales y clases magistrales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Menu Cards -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Platos Destacados</h2>
+            <p class="section-subtitle">Nuestras creaciones más populares que representan la esencia de la fusión culinaria</p>
+            <div class="menu-grid">
+                <!-- Card 1 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="img/menu/plato-1.jpg" alt="Ramen con toques mexicanos">
+                        <div class="menu-card-overlay">
+                            <div class="overlay-content">
+                                <h4>Ingredientes principales</h4>
+                                <p>Cerdo confitado, caldo miso, chile de árbol, cebolla morada, cilantro, huevo a baja temperatura</p>
+                                <a href="#" class="btn-overlay">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Ramen Mexicano</h3>
+                        <p>Una fusión asiática-latina con caldo de miso infusionado con chiles mexicanos y cerdo confitado por 12 horas.</p>
+                        <div class="menu-price">$24.90</div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="img/menu/plato-2.webp" alt="Tiradito peruano-japonés">
+                        <div class="menu-card-overlay">
+                            <div class="overlay-content">
+                                <h4>Ingredientes principales</h4>
+                                <p>Corvina fresca, leche de tigre, aceite de ají amarillo, maíz cancha, cilantro, camote</p>
+                                <a href="#" class="btn-overlay">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Tiradito Nikkei</h3>
+                        <p>Pescado crudo en cortes finos con una leche de tigre que fusiona sabores peruanos y japoneses en perfecta armonía.</p>
+                        <div class="menu-price">$22.50</div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="img/menu/plato-3.webp" alt="Taco de pato pekinés">
+                        <div class="menu-card-overlay">
+                            <div class="overlay-content">
+                                <h4>Ingredientes principales</h4>
+                                <p>Pato confitado, tortilla de harina artesanal, salsa hoisin, pepino, cebollín, ajonjolí</p>
+                                <a href="#" class="btn-overlay">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Taco Pekinés</h3>
+                        <p>Una reinterpretación del pato laqueado en formato taco, con salsa hoisin y vegetales frescos que equilibran el sabor.</p>
+                        <div class="menu-price">$18.75</div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="img/menu/plato-4.jpg" alt="Paella con ingredientes asiáticos">
+                        <div class="menu-card-overlay">
+                            <div class="overlay-content">
+                                <h4>Ingredientes principales</h4>
+                                <p>Arroz bomba, azafrán, gambas, calamar, chorizo ibérico, jengibre, salsa de soja, guisantes</p>
+                                <a href="#" class="btn-overlay">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Paella Fusión</h3>
+                        <p>La paella valenciana se encuentra con sabores asiáticos: jengibre, soja y especias orientales para un resultado sorprendente.</p>
+                        <div class="menu-price">$28.50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Recetario -->
+    <section class="recipe-section" id="recetario">
+        <div class="container">
+            <h2 class="section-title">Recetario Fusión</h2>
+            <p class="section-subtitle">Descubre cómo crear platos fusionados en tu propia cocina con nuestras recetas paso a paso</p>
+            
+            <div class="recipe-gallery">
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="img/recetario/receta-1.webp" alt="Ceviche con toques tailandeses">
+                    </div>
+                    <div class="recipe-card-content">
+                        <h3>Ceviche Thai</h3>
+                        <p>Pescado blanco marinado en leche de coco, limón, cilantro y chile tailandés. Una fusión peruano-asiática refrescante.</p>
+                        <div class="recipe-details">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-user-friends"></i> 4 personas</span>
+                            <span><i class="fas fa-fire"></i> Media</span>
+                        </div>
+                        <a href="#" class="btn-recipe">Ver receta completa <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="img/recetario/receta-2.webp" alt="Risotto con ingredientes latinos">
+                    </div>
+                    <div class="recipe-card-content">
+                        <h3>Risotto Latino</h3>
+                        <p>Arborio con maíz, queso cotija, cilantro y un toque de ají amarillo peruano. Cremosidad italiana con alma latina.</p>
+                        <div class="recipe-details">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-user-friends"></i> 2 personas</span>
+                            <span><i class="fas fa-fire"></i> Fácil</span>
+                        </div>
+                        <a href="#" class="btn-recipe">Ver receta completa <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="img/recetario/receta-3.webp" alt="Tarta de chocolate con especias">
+                    </div>
+                    <div class="recipe-card-content">
+                        <h3>Tarta de Chocolate & Especias</h3>
+                        <p>Postre fusión que combina chocolate belga con cardamomo, anís y pimienta rosa. Un viaje de sabores en cada bocado.</p>
+                        <div class="recipe-details">
+                            <span><i class="fas fa-clock"></i> 60 min</span>
+                            <span><i class="fas fa-user-friends"></i> 8 personas</span>
+                            <span><i class="fas fa-fire"></i> Avanzada</span>
+                        </div>
+                        <a href="#" class="btn-recipe">Ver receta completa <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="btn-warm">Ver todas las recetas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">¿Tienes preguntas, quieres reservar una experiencia gastronómica o tienes alguna sugerencia?</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Calle Fusión 123, Distrito Gourmet<br>Ciudad Capital, CP 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@gastronomiafusion.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Martes a Domingo: 12:00 - 23:00 hrs<br>Lunes: Cerrado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre completo *</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="¿Sobre qué nos contactas?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-warm">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><span class="logo-highlight">Gastronomía</span> Fusión</h3>
+                    <p>Donde los sabores del mundo se encuentran en cada plato, creando experiencias culinarias únicas e inolvidables.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#recetario">Recetario</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Reservaciones</a></li>
+                        <li><a href="#">Eventos Privados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <p>Mantente al día con nuestras últimas creaciones y eventos especiales</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gastronomía Fusión. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+                <p class="design-credit">Diseño gourmet con ❤️ para amantes de la buena cocina</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
